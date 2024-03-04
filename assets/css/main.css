@@ -58,6 +58,8 @@ section {
 }
 .sec-title {
   font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: normal;
   color: royalblue;
   text-shadow: 0 0 1px rgba(221, 221, 221);
   font-family: "DG Kufi";
@@ -102,6 +104,7 @@ section {
       .name {
         font-family: "DG Kufi";
         font-size: 50px;
+        font-weight: normal;
         color: #333;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         margin-bottom: -10px;
