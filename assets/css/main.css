@@ -33,21 +33,30 @@ body {
   color: var(--black-333);
 }
 section {
-  position: relative;
   width: 100%;
   height: 100svh;
+  position: relative;
+  .fa-angles-down {
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    color: var(--black-333);
+  }
+}
+.sec-title {
+  color: var(--royalBlue);
+  font-size: 38px;
+  font-family: "DG Kufi";
+  font-weight: normal;
 }
 .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 25px;
-  .fa-angles-down {
-    color: var(--black-333);
-    position: absolute;
-    bottom: 25px;
-    font-size: 25px;
-  }
 }
 
 /* [ Header ] */
@@ -111,6 +120,34 @@ section {
       z-index: -99;
       width: 300px;
       opacity: 0.05;
+    }
+  }
+}
+
+/* [ About ] */
+.about {
+  .about-content {
+    height: 100svh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .my-info {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      .profile {
+        width: 300px;
+      }
+      .desc {
+        font-size: 18px;
+        width: 350px;
+        line-height: 1.7;
+        opacity: 0.9;
+      }
     }
   }
 }
