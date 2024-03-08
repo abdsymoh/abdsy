@@ -33,18 +33,16 @@ body {
   color: var(--black-333);
 }
 section {
-  width: 100%;
-  height: 100svh;
   position: relative;
-  .fa-angles-down {
-    text-align: center;
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateY(-50%);
-    font-size: 26px;
-    color: var(--black-333);
-  }
+  height: 100svh;
+}
+.fa-angles-down {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 26px;
+  color: var(--black-333);
 }
 .sec-title {
   color: var(--royalBlue);
@@ -59,94 +57,91 @@ section {
   padding: 0 25px;
 }
 
-/* [ Header ] */
-.header {
-  width: 100%;
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo {
-      width: 70px;
-      position: absolute;
-      left: 25px;
-      top: 25px;
+/* [ Main CSS ] */
+.abdsy {
+  /* [ Header ] */
+  .header {
+    .header-content {
+      .logo {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 70px;
+      }
+      .my-links {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        & a {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--black-333);
+          font-size: 32px;
+        }
+      }
     }
-    .my-links {
-      position: absolute;
-      right: 25px;
-      top: 25px;
+  }
+  /* [ Landing ] */
+  .landing {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .landing-content {
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: column;
       justify-content: center;
       align-items: center;
-      gap: 10px;
-      & a {
-        width: 40px;
-        height: 40px;
-        font-size: 26px;
+      .my-name {
+        font-size: 50px;
+        font-weight: normal;
+        font-family: "DG Kufi";
+        margin-bottom: -25px;
+      }
+      .my-job {
+        font-size: 32px;
+        color: var(--royalBlue);
+      }
+      .logo {
+        width: 300px;
+        position: absolute;
+        opacity: 0.05;
+      }
+    }
+  }
+  /* [ About ] */
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    .about-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      .my-info {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
-        color: var(--black-333);
-      }
-    }
-  }
-}
-
-/* [ Landing ] */
-.landing {
-  .landing-content {
-    height: 100svh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    .my-name {
-      font-family: "DG Kufi";
-      font-weight: normal;
-      color: var(--black-333);
-      font-size: 48px;
-      margin-bottom: -25px;
-    }
-    .my-job {
-      font-weight: normal;
-      color: var(--royalBlue);
-      font-size: 32px;
-    }
-    .logo {
-      position: absolute;
-      z-index: -99;
-      width: 300px;
-      opacity: 0.05;
-    }
-  }
-}
-
-/* [ About ] */
-.about {
-  .about-content {
-    height: 100svh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    .my-info {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      .profile {
-        width: 300px;
-      }
-      .desc {
-        font-size: 18px;
-        width: 350px;
-        line-height: 1.7;
-        opacity: 0.9;
+        flex-flow: column;
+        text-align: center;
+        gap: 20px;
+        .profile {
+          width: 250px;
+        }
+        .desc {
+          width: 350px;
+          opacity: 0.9;
+        }
       }
     }
   }
