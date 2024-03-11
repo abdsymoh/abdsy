@@ -78,58 +78,27 @@ section {
         left: 25px;
         width: 50px;
       }
-      .settings-menu {
-        width: 250px;
-        background-color: var(--white);
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .utilities {
         position: fixed;
-        left: 50%;
-        top: -99px;
-        transform: translateX(-50%);
-      }
-      .settings-side-toggle {
-        position: fixed;
-        left: 50%;
-        top: 99px;
-        transform: translateX(-50%);
-        cursor: pointer;
+        top: 0;
+        right: 0;
+        transform: translateX(199px);
         z-index: 99;
-        background-color: var(--white);
-        border: none;
-        width: 35px;
-        height: 35px;
-        border-radius: 0 0 50px 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .fa-gear {
-          color: var(--black-333);
-        }
-        .fa-circle-xmark {
-          color: var(--black-333);
-          opacity: 0.5;
-        }
-      }
-      .my-links {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        & a {
+        height: 100svh;
+        width: 200px;
+        background-color: var(--black-333);
+        .btnToggle {
+          position: fixed;
+          right: 200px;
+          top: 25px;
           width: 50px;
           height: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: var(--black-333);
-          font-size: 32px;
+          border: none;
+          background-color: var(--black-333);
+          border-radius: 50px 0 0 50px;
+          cursor: pointer;
+          font-size: 18px;
+          color: var(--white);
         }
       }
     }

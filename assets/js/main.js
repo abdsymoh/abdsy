@@ -17,15 +17,15 @@ btnUP.onclick = function () {
 };
 
 // Settings Toggle
-let settingsToggle = document.getElementById("settingsToggle");
-settingsToggle.onclick = function () {
-  if (settingsToggle.querySelector("i").classList.contains("fa-circle-xmark")) {
-    settingsToggle.querySelector("i").classList.add("fa-gear");
-    settingsToggle.querySelector("i").classList.remove("fa-circle-xmark");
-    document.querySelector(".settings-menu").style = ` top: -99px`;
+let btnToggle = document.getElementById("btnToggle");
+btnToggle.onclick = function () {
+  if (btnToggle.querySelector("i").classList.contains("fa-circle-xmark")) {
+    btnToggle.querySelector("i").classList.remove("fa-circle-xmark");
+    btnToggle.querySelector("i").classList.add("fa-sliders");
+    document.querySelector(".utilities").style = `transform: translateX(199px)`;
   } else {
-    settingsToggle.querySelector("i").classList.add("fa-circle-xmark");
-    settingsToggle.querySelector("i").classList.remove("fa-gear");
-    document.querySelector(".settings-menu").style = ` top: 0`;
+    btnToggle.querySelector("i").classList.remove("fa-sliders");
+    btnToggle.querySelector("i").classList.add("fa-circle-xmark");
+    document.querySelector(".utilities").style = `transform: translateX(0px)`;
   }
 };
