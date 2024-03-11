@@ -83,7 +83,7 @@ section {
         position: fixed;
         top: 0;
         right: 0;
-        /* transform: translateX(249px); */
+        transform: translateX(249px);
         z-index: 99;
         height: 100svh;
         width: 100%;
