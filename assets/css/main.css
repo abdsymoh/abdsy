@@ -76,7 +76,42 @@ section {
         position: absolute;
         top: 25px;
         left: 25px;
-        width: 70px;
+        width: 50px;
+      }
+      .settings-menu {
+        width: 250px;
+        background-color: var(--white);
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 50%;
+        top: -99px;
+        transform: translateX(-50%);
+      }
+      .settings-side-toggle {
+        position: fixed;
+        left: 50%;
+        top: 99px;
+        transform: translateX(-50%);
+        cursor: pointer;
+        z-index: 99;
+        background-color: var(--white);
+        border: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 0 0 50px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-gear {
+          color: var(--black-333);
+        }
+        .fa-circle-xmark {
+          color: var(--black-333);
+          opacity: 0.5;
+        }
       }
       .my-links {
         position: absolute;
