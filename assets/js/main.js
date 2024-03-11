@@ -22,7 +22,7 @@ btnToggle.onclick = function () {
   if (btnToggle.querySelector("i").classList.contains("fa-circle-xmark")) {
     btnToggle.querySelector("i").classList.remove("fa-circle-xmark");
     btnToggle.querySelector("i").classList.add("fa-sliders");
-    document.querySelector(".utilities").style = `transform: translateX(199px)`;
+    document.querySelector(".utilities").style = `transform: translateX(249px)`;
   } else {
     btnToggle.querySelector("i").classList.remove("fa-sliders");
     btnToggle.querySelector("i").classList.add("fa-circle-xmark");
