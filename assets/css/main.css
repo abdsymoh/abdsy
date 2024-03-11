@@ -36,6 +36,16 @@ section {
   position: relative;
   height: 100svh;
 }
+.fa-circle-arrow-up {
+  cursor: pointer;
+  position: fixed;
+  z-index: 999;
+  bottom: 25px;
+  right: 25px;
+  font-size: 32px;
+  color: var(--black-333);
+  display: none;
+}
 .fa-angles-down {
   position: absolute;
   bottom: 25px;
